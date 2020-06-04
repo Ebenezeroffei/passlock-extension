@@ -1,0 +1,20 @@
+{
+	"manifest_version": 2,
+	"name": "Passlock",
+	"version": "1.0",
+	"description": "An extensions that saves your account details",
+	"browser_action": {
+		"default_popup": "popup.html"
+	},
+	"options_page": "options.html",
+	"content_scripts": [
+		{
+			"matches": ["<all_urls>"],
+			"js": ["jquery.js","content.js"]
+		}
+	],
+	"permissions": [
+		"storage",
+		"notifications"
+	]
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"  content="width=device-width,initial-scale=1.0"/>
+	<title>Login</title>
+	<style>
+		body{
+			margin:auto;
+		}
+		*:focus{
+			outline: none;
+		}
+		#container{
+/*			background-image: linear-gradient(45deg,darkblue,blue,royalblue,dodgerblue,skyblue,turquoise);*/
+			background-repeat: no-repeat;
+			background-size: 10000px,10000px;
+			background-attachment: fixed;
+			background-position: left;
+			width:100vw;
+			height: 100vh;
+			animation: animate 20s alternate ease infinite forwards;
+		}
+		
+		@keyframes animate{
+			from{
+				background-position: left;
+			}
+			to{
+				background-position: right;
+			}
+		}
+		
+		#wrapper{
+			max-width: 400px;
+			margin: auto;
+			padding: 15px 10px;
+			position: relative;
+			top:100px;
+			background: rgba(255,255,255,1);
+			border-radius: 10px
+		}
+		#options p{
+			margin: auto;
+			width: calc((100% - 4px)/2);
+			font: 20px sans-serif;
+			color: black;
+			display:inline-block;
+			text-align: center;
+		}
+		.form-group{
+			margin: 10px auto;
+		}
+		.form-group label{
+			color:#535353;
+			font:18px sans-serif;
+		}
+		input[type = 'text'], input[type = 'password']{
+			width:100%;
+			border-radius: 5px;
+			border: thin solid #535353;
+			color: #535353;
+			font:16px sans-serif;
+			padding: 3px 2px;
+		}
+		input[type = 'submit']{
+			margin: 10px auto;
+			width: 60%;
+			background-image: linear-gradient(45deg,darkblue,blue,royalblue,dodgerblue,skyblue,turquoise);
+			background-repeat: no-repeat;
+			background-size: 10000px,10000px;
+			background-attachment: fixed;
+			background-position: left;
+			animation: animate 20s alternate ease infinite forwards;
+			text-align: center;
+			padding: 5px 0px;
+			font:18px sans-serif;
+			border-radius: 5px;
+			border:none;
+			display: block;
+			cursor: pointer;
+			color: white;
+		}
+		input[type = 'submit']:hover{
+			box-shadow: 0px 2px 5px rgba(0,0,0,.5);
+		}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<div id="wrapper">
+			<div id="options">
+				<p>Sign In</p>
+				<p>Sign Up</p>
+			</div><hr/>
+			<form action="">
+				<div class="form-group">
+					<label for="username">Username</label><br/>
+					<input type="text" name="username" id="username">
+				</div>
+				<div class="form-group">
+					<label for="password">Password</label><br/>
+					<input type="password" name="password" id="password">
+				</div>
+				<input type="submit" value="Sign In">
+			</form>
+		</div>
+	</div>
+</body>
+</html>

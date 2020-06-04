@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Options</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+	<link rel="stylesheet" href="tests/bootstrap.min.css" type="text/css">
+</head>
+<body>
+	<div id="wrapper" class="container">
+		<div id="auth-container" style="max-width:400px;margin:30px auto;opacity:0;">
+			<h5 class="text-muted text-center">Sign into your passlock account</h5><hr/>
+			<div class="form-group">
+				<label for="id_username">Username:</label>
+				<input id="id_username" class="form-control" type="text" placeholder = "E.g. someone12345">
+			</div>
+			<div class="form-group">
+				<label for="id_password">Password:</label>
+				<div class="input-group">
+					<input class="form-control" type="password" id="id_password">
+					<div class="input-group-append">
+						<button class="btn btn-secondary" type="button" id="show-hide">Show</button>
+					</div>
+				</div>
+				<p id="errors" class="text-danger small"></p>
+			</div>
+			<button id="signin" class="btn btn-primary btn-block mt-4">Sign In</button>
+		</div>
+	</div>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="options.js"></script>
+</body>
+</html>
